@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueueLess - Staff Dashboard</title>
+
+    <link rel="stylesheet" href="css/staff.css">
+
+    <script src="js/store.js" defer></script>
+    <script src="js/staff.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>QueueLess</h1>
+
+        <nav>
+            <a href="index.html">Menu</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="track.html">Track Order</a>
+            <a href="staff.html">Staff Dashboard</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <h2>Staff Dashboard</h2>
+            <p>Manage student orders and update pickup status.</p>
+        </section>
+
+        <section class="orders-section">
+
+            <h2>Saved Orders</h2>
+
+            <button class="refresh-button" onclick="loadOrders()">
+                Refresh Orders
+            </button>
+
+            <div id="orderList">
+                No orders available.
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 QueueLess | Campus Food Ordering System</p>
+    </footer>
+
+</body>
+</html>
