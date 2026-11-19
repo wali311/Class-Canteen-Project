@@ -1,0 +1,246 @@
+
+/* =========================
+   QUEUELESS CHECKOUT DESIGN
+   Orange & Cream Theme
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffecdd;
+    color: #5d4c3e;
+}
+
+/* Header */
+header {
+    background-color: #a0441c;
+    color: white;
+    padding: 22px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #ffddc4;
+    text-decoration: underline;
+}
+
+/* Main Container */
+.checkout-container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #a0441c;
+}
+
+/* Order Summary */
+.order-box,
+.pickup-box {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #eeddd0;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(100, 60, 30, 0.07);
+}
+
+/* Food Items */
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    margin-bottom: 12px;
+    background: #fffaf6;
+    border: 1px solid #eeddd0;
+    border-radius: 12px;
+    font-size: 15px;
+}
+
+/* Food Images */
+.food-image {
+    width: 85px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+/* Food Details */
+.food-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.food-details strong {
+    color: #a0441c;
+    font-size: 16px;
+}
+
+.food-details p {
+    margin: 0;
+    color: #755f4e;
+    font-size: 14px;
+}
+
+.order-box h3 {
+    margin-top: 20px;
+    color: #a0441c;
+    font-size: 19px;
+}
+
+/* Pickup Time */
+.pickup-box label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #e4bda0;
+    border-radius: 7px;
+    background-color: #fff0e5;
+    color: #5d4c3e;
+    font-size: 15px;
+}
+
+select:focus {
+    outline: 2px solid #b84c1d;
+}
+
+/* Place Order Button */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #a0441c;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+button:hover:not(:disabled) {
+    background-color: #b84c1d;
+}
+
+button:disabled {
+    background-color: #c9a995;
+    cursor: not-allowed;
+}
+
+/* Error Message */
+#message {
+    margin-top: 15px;
+    color: #a0441c;
+    font-weight: bold;
+}
+
+/* Order Confirmation */
+#confirmation {
+    background-color: white;
+    border: 1px solid #eeddd0;
+    border-radius: 12px;
+    padding: 30px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#confirmation h2 {
+    color: #a0441c;
+}
+
+#order-token {
+    display: inline-block;
+    background-color: #fff0e5;
+    color: #a0441c;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+#confirmation-details {
+    margin: 15px 0;
+    line-height: 1.8;
+}
+
+#track-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 25px;
+    background-color: #a0441c;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+#track-link:hover {
+    background-color: #b84c1d;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .checkout-container {
+        margin: 20px auto;
+        padding: 12px;
+    }
+
+    .order-box,
+    .pickup-box {
+        padding: 18px;
+    }
+
+    .food-image {
+        width: 70px;
+        height: 65px;
+    }
+
+    .cart-item {
+        gap: 10px;
+        padding: 10px;
+    }
+}

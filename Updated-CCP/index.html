@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueueLess - Food Menu</title>
+
+    <link rel="stylesheet" href="css/menu.css">
+
+    <script src="js/store.js" defer></script>
+    <script src="js/menu.js" defer></script>
+	<script src="staff.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>QueueLess</h1>
+
+        <nav>
+            <a href="index.html">Menu</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="track.html">Track Order</a>
+			<a href="staff.html">Staff Dashboard</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <h2>Campus Food Menu</h2>
+            <p>Choose your favorite food and order online!</p>
+        </section>
+
+        <section class="menu-section">
+            <h2>Available Foods</h2>
+
+            <div id="food-list" class="food-grid"></div>
+        </section>
+
+        <section class="cart-section">
+            <h2>Your Cart</h2>
+
+            <div id="cart-items">
+                Your cart is empty!
+            </div>
+
+            <h3>
+                Total: Tk <span id="cart-total">0</span>
+            </h3>
+
+            <a href="checkout.html" class="checkout-button">
+                Go to Checkout
+            </a>
+        </section>
+
+        <p id="message"></p>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 QueueLess | Campus Food Ordering System</p>
+    </footer>
+
+</body>
+</html>

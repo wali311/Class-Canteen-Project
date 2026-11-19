@@ -1,0 +1,132 @@
+/* General page styles */
+html {
+    background-color: #fffaf6;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    color: #382d26;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select {
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: white;
+    border-bottom: 1px solid #efdfd2;
+}
+
+.navigation {
+    max-width: 1180px;
+    margin: auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Logo */
+.logo {
+    display: block;
+    float: left;
+    font-size: 28px;
+    font-weight: 700;
+    margin-right: 45px;
+    margin-bottom: 8px;
+}
+
+.logo span {
+    color: #b84c1d;
+}
+
+/* Navigation links */
+nav {
+    float: left;
+    overflow: hidden;
+}
+
+nav a {
+    display: block;
+    float: left;
+    padding: 12px 10px;
+    margin-right: 8px;
+    font-size: 13px;
+    color: #756457;
+}
+
+nav a:hover {
+    color: #a74419;
+    background-color: #fff1e6;
+}
+
+nav a.active {
+    color: #a74419;
+    border-bottom: 2px solid #b84c1d;
+}
+
+/* Shared buttons */
+.button {
+    display: inline-block;
+    padding: 13px 22px;
+    border: none;
+    border-radius: 8px;
+    background-color: #b84c1d;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #943813;
+}
+
+/* Shared form styles for team integration */
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 13px;
+}
+
+input,
+select {
+    padding: 11px;
+    border: 1px solid #dfcbbb;
+    border-radius: 6px;
+    background-color: white;
+    color: #382d26;
+}
+
+/* Footer */
+footer {
+    padding: 25px 15px;
+    margin-top: 35px;
+    background-color: white;
+    border-top: 1px solid #efdfd2;
+    text-align: center;
+}
+
+footer p {
+    color: #786759;
+    font-size: 11px;
+    margin: 6px 0;
+}
+
+footer .footer-logo {
+    color: #382d26;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.footer-logo span {
+    color: #b84c1d;
+}

@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>QueueLess - Checkout</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/checkout.css">
+
+    <!-- JavaScript Files -->
+    <script src="js/store.js" defer></script>
+    <script src="js/checkout.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+
+        <h1>QueueLess</h1>
+
+        <nav>
+            <a href="index.html">Menu</a>
+            <a href="track.html">Track Order</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Main Checkout Section -->
+    <main class="checkout-container">
+
+        <h2>Checkout</h2>
+
+        <p>Review your order before confirmation.</p>
+
+
+        <!-- 1. Order Summary -->
+        <section class="order-box">
+
+            <h3>Your Order Summary</h3>
+
+            <!-- Selected Food Items -->
+            <div id="cart-items">
+
+            </div>
+
+            <!-- Total Price -->
+            <h3>
+                Total: Tk
+                <span id="total">0</span>
+            </h3>
+
+            <!-- Preparation Time -->
+            <p>
+                Estimated Preparation:
+
+                <strong>
+                    <span id="prep-time">0</span>
+                    minutes
+                </strong>
+
+            </p>
+
+        </section>
+
+
+        <!-- 2. Pickup Time Section -->
+        <section class="pickup-box">
+
+            <h3>Select Pickup Time</h3>
+
+            <label for="pickup-time">
+                Choose your pickup slot:
+            </label>
+
+            <select id="pickup-time">
+
+                <option value="">
+                    -- Select Time --
+                </option>
+
+                <option value="12:30 PM">
+                    12:30 PM
+                </option>
+
+                <option value="12:45 PM">
+                    12:45 PM
+                </option>
+
+                <option value="1:00 PM">
+                    1:00 PM
+                </option>
+
+            </select>
+
+
+            <!-- Place Order Button -->
+            <button id="place-order">
+
+                Place Order
+
+            </button>
+
+
+            <!-- Error Message -->
+            <p id="message"></p>
+
+        </section>
+
+
+        <!-- 3. Order Confirmation Section -->
+        <section id="confirmation" hidden>
+
+            <h2>Order Confirmed!</h2>
+
+            <p>Your Order Token:</p>
+
+            <h1 id="order-token"></h1>
+
+            <p id="confirmation-details"></p>
+
+
+            <!-- Track Order Link -->
+            <a id="track-link" href="track.html">
+
+                Track Your Order
+
+            </a>
+
+        </section>
+
+    </main>
+<div class="checkout-container"></div>
+<script src="js/store.js" defer></script>
+<script src="js/checkout.js" defer></script>
+
+</body>
+
+</html>
